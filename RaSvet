@@ -1,0 +1,6 @@
+   nbytes += *ip;
+  }
+    
+  nfl = 0;
+  for (l = free_list_begin(); l != NULL; l = free_list_next(l)) {
+    ip = (int *) l;
